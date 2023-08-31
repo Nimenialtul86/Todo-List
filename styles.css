@@ -82,7 +82,8 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(17, 17, 17, 0.2), 0 6px 20px 0 rgba(19, 18, 18, 0.19);
 }
 
-.list {
+.list,
+.add-item {
     padding: .2rem;
     display: flex;
     flex-direction: column;
@@ -126,7 +127,8 @@ button::after {
     justify-content: center;
 }
 
-.add-item {
+.add-item,
+.add-work-item {
     background: none;
     border: white;
     outline: white;
