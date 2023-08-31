@@ -138,6 +138,9 @@ button::after {
     text-align: center;
 }
 
+.deleteTask {
+    font-size: 1.5rem;
+}
 
 footer {
     text-align: center;

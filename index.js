@@ -9,7 +9,8 @@ function addTask() {
         li.innerHTML = addItem.value;
         list.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML = "X";
+        span.innerHTML = "&times";
+        span.classList.add("deleteTask")
         li.appendChild(span);
       }
       addItem.value = "";
