@@ -54,7 +54,7 @@ html {
 .container {
     display: grid;
     justify-content: center;
-    margin: 5rem 0 3rem 0 ;
+    margin: 5rem 0 3rem 0;
     gap: 2.5rem;
 }
 
@@ -82,8 +82,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(17, 17, 17, 0.2), 0 6px 20px 0 rgba(19, 18, 18, 0.19);
 }
 
-.list,
-.add-item {
+.list{
     padding: .2rem;
     display: flex;
     flex-direction: column;
@@ -127,8 +126,7 @@ button::after {
     justify-content: center;
 }
 
-.add-item,
-.add-work-item {
+.add-item{
     background: none;
     border: white;
     outline: white;
@@ -136,6 +134,7 @@ button::after {
     font-size: 1.2rem;
     border-bottom: 2px solid var(--primary-color);
     text-align: center;
+    width: 100%;
 }
 
 .deleteTask {
