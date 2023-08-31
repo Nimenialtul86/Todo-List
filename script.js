@@ -1,8 +1,8 @@
 let list = document.querySelector(".list");
+let addItem = document.querySelector(".add-item");
 
 function addTask() {
   let li = document.createElement("li");
-  let addItem = document.querySelector(".add-item");
       if(addItem.value === "") {
         alert("Enter a task");
       } else {
@@ -13,12 +13,28 @@ function addTask() {
         li.appendChild(span);
       }
       addItem.value = "";
+      saveData();
     }
 
 list.addEventListener("click", function(e) {
   if(e.target.tagName === "LI") {
     e.target.classList.toggle("checked")
+    saveData();
   } else if(e.target.tagName === "SPAN") {
     e.target.parentElement.remove();
+    saveData();
   }
 })
+
+function saveData() {
+  localStorage.setItem("data", list.innerHTML);
+}
+function showTask() {
+  list.innerHTML = localStorage.getItem("data");
+}
+
+showTask();
+
+
+
+
